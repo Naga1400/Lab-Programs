@@ -1,0 +1,45 @@
+import java.util.Scanner;
+class Quadratic{
+	public static void main(String args[]){
+	
+	int a=0,b,c;
+	double r1,r2;
+	Scanner s=new Scanner(System.in);
+	while (a==0){
+	System.out.println("Enter the value for A :");
+	a=s.nextInt();
+	if (a==0){                                                                                                                                                                                                                                                                                                                                                                                                                      
+		System.out.println("No possible Solutions if A is 0 ");
+		}
+	}
+	System.out.println("Enter the value for B :");
+	b=s.nextInt();
+	System.out.println("Enter the value for C :");
+	c=s.nextInt();
+	double d=(b*b)-(4*a*c);
+	if (d==0){
+		r1=(-b)/(2*a);
+		System.out.println("Roots are Real and Equal "+r1);
+		}
+		else if(d>0){
+		r1 = ((-b)+(Math.sqrt(d)))/(double)(2*a);
+		r2 = ((-b)-(Math.sqrt(d)))/(double)(2*a);
+		System.out.println("Roots are Real");
+		System.out.println("Root 1 is :"+r1);
+		System.out.println("Root 2 is :"+r2);
+		}
+		else if(d<0){
+		r1 = (-b)/(2*a);
+		r2 = Math.sqrt(-d)/(2*a);
+		System.out.println("Roots are Imaginary");
+		System.out.println("Root 1 is :"+r1);
+		System.out.println("Root 2 is :"+r2);
+		}
+		                                
+		System.out.println("Name: Nagaraja G");
+		System.out.println("USN: 24BECS426");
+	}
+}
+	
+	
+	
